@@ -1,33 +1,33 @@
 package com.pavel.cuncurrency;
 
-import com.pavel.cuncurrency.example.UnsafeSequence;
+import com.pavel.cuncurrency.example.SynchronizedSequence;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class UnsafeSequenceTest {
+public class SynchronizedSequenceTest {
 
-    private UnsafeSequence sequence;
+    private SynchronizedSequence sequence;
 
     @Before
     public void setUp() {
-        sequence = new UnsafeSequence();
+        sequence = new SynchronizedSequence();
     }
 
     @Test
-    public void unsafeSequenceShouldBeCreated() {
+    public void synchronizedSequenceShouldBeCreated() {
         assertNotNull(sequence);
     }
 
     @Test
-    public void unsafeSequenceShouldReturn0() {
+    public void synchronizedSequenceShouldReturn0() {
         assertEquals(0, sequence.getNext());
     }
 
     @Test
-    public void unsafeSequenceShouldReturn0And1() {
+    public void synchronizedSequenceShouldReturn0And1() {
         assertEquals(0, sequence.getNext());
         assertEquals(1, sequence.getNext());
     }

@@ -1,4 +1,6 @@
-package com.pavel.cuncurrency;
+package com.pavel.cuncurrency.example;
+
+import com.pavel.cuncurrency.annotations.NotThreadSafe;
 
 @NotThreadSafe
 public class UnsafeSequence {
