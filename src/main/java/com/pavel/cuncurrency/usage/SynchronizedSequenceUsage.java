@@ -5,7 +5,7 @@ import com.pavel.cuncurrency.example.SynchronizedSequence;
 /*
  * The result will be permanent
  */
-public class SafeSequenceUsage {
+public class SynchronizedSequenceUsage {
     public static void main(String[] args) {
         System.out.println("Start...");
 
